@@ -3,14 +3,40 @@
     <head>
         <title>Flex</title>
         <link rel="stylesheet" type="text/css" href="App.css" />
+        <style>
+            .flex-container{
+                height: 300px;
+                width: 700px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .circle {
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                background-color: #DAA520;
+            }
+            #ircle-1 {
+                align-items: flex-end;
+            }
+            .circle#circle-1, .circle#circle-5 {
+                align-self: flex-start;
+            }
+            .circle#circle-2, .circle#circle-4 {
+                align-self: center;
+            }
+            .circle#circle-3 {
+                align-self: flex-end;
+            }
+        </style>
     </head>
     <body>
         <section class="flex-container">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="circle" id="circle-1"></div>
+            <div class="circle" id="circle-2"></div>
+            <div class="circle" id="circle-3"></div>
+            <div class="circle" id="circle-4"></div>
+            <div class="circle" id="circle-5"></div>
         </section>
     </body>
 </html>
